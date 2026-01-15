@@ -1,19 +1,40 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container header__container">
+      <a href="/" class="logo">Trana-Vista</a>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link active">Главная</a></li>
+              <li><a href="#blog" class="nav__link">AI-Блог</a></li>
+              <li><a href="#tech" class="nav__link">Технологии</a></li>
+              <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li><a href="#process" class="nav__link">Этапы</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+          <button class="burger" aria-label="Открыть меню">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__inner">
+      <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+              <li><a href="#" class="mobile-nav__link">Главная</a></li>
+              <li><a href="#blog" class="mobile-nav__link">AI-Блог</a></li>
+              <li><a href="#tech" class="mobile-nav__link">Технологии</a></li>
+              <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+              <li><a href="#process" class="mobile-nav__link">Этапы</a></li>
+              <li><a href="#contact" class="mobile-nav__link">Запросить доступ</a></li>
+          </ul>
+      </nav>
+      <div class="mobile-menu__footer">
+          <p>Предложение активно в странах ЕС</p>
+          <a href="tel:+493098320511" class="mobile-menu__phone">+49 30 9832 0511</a>
+      </div>
+  </div>
+</div>
