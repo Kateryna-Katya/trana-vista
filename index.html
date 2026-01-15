@@ -1,56 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/trana-vista/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trana-Vista | AI-инструменты нового поколения</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/trana-vista/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/trana-vista/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/trana-vista/assets/styles-Cuw2DE_M.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container header__container">
+      <a href="/" class="logo">Trana-Vista</a>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link active">Главная</a></li>
+              <li><a href="#blog" class="nav__link">AI-Блог</a></li>
+              <li><a href="#tech" class="nav__link">Технологии</a></li>
+              <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li><a href="#process" class="nav__link">Этапы</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+          <button class="burger" aria-label="Открыть меню">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__inner">
+      <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+              <li><a href="#" class="mobile-nav__link">Главная</a></li>
+              <li><a href="#blog" class="mobile-nav__link">AI-Блог</a></li>
+              <li><a href="#tech" class="mobile-nav__link">Технологии</a></li>
+              <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+              <li><a href="#process" class="mobile-nav__link">Этапы</a></li>
+              <li><a href="#contact" class="mobile-nav__link">Запросить доступ</a></li>
+          </ul>
+      </nav>
+      <div class="mobile-menu__footer">
+          <p>Предложение активно в странах ЕС</p>
+          <a href="tel:+493098320511" class="mobile-menu__phone">+49 30 9832 0511</a>
+      </div>
+  </div>
+</div>
 
-
-    <main>
+    <main id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+  </div>
+
+  <div class="container hero__container">
+      <div class="hero__content">
+          <h1 class="hero__title js-split-text">
+              Инновационная технология:
+              <span class="text-highlight">AI-ассистенты</span> нового поколения
+          </h1>
+
+          <p class="hero__subtitle animate-item">
+              Технологии, которые работают на вас. Переосмыслите подход к развитию. Платформа уже доступна в Европе для решения реальных задач.
+          </p>
+
+          <div class="hero__actions animate-item">
+              <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+              <a href="#tech" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+
+      <div class="hero__visual animate-item">
+          <div class="visual-card">
+              <div class="visual-card__header">
+                  <span class="dot dot--red"></span>
+                  <span class="dot dot--yellow"></span>
+                  <span class="dot dot--green"></span>
+              </div>
+              <div class="visual-card__content">
+                 <div class="code-line"><span class="cl-blue">const</span> bot = <span class="cl-purp">new</span> AI_Assistant();</div>
+                 <div class="code-line">bot.<span class="cl-blue">init</span>({ mode: <span class="cl-green">'deep_learning'</span> });</div>
+                 <div class="code-line typing-effect">>> Анализирую данные... OK.</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="blog" id="blog">
+  <div class="container">
+      <div class="section-header animate-item">
+          <span class="section-tag">Инсайты и статьи</span>
+          <h2 class="section-title">AI-Блог: Технологии, которые меняют мир</h2>
+          <p class="section-desc">Детальные разборы, кейсы и стратегии роста на базе инноваций в сфере искусственного интеллекта.</p>
+      </div>
+
+      <div class="blog__grid">
+          <article class="blog-card animate-item">
+              <div class="blog-card__image">
+                  <img src="/trana-vista/assets/one-C1t-KZX8.jpg" alt="AI Assistant">
+                  <span class="blog-card__category">AI-тренды</span>
+              </div>
+              <div class="blog-card__content">
+                  <div class="blog-card__meta">15 Января, 2026 • 5 мин чтения</div>
+                  <h3 class="blog-card__title">Как AI-ассистенты меняют клиентский сервис в Европе</h3>
+                  <p class="blog-card__excerpt">Разбираем решения, которые меняют правила игры в коммуникации с клиентами и оптимизации бизнес-процессов.</p>
+                  <a href="#conatct" class="blog-card__link">
+                      Читать статью
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                  </a>
+              </div>
+          </article>
+
+          <article class="blog-card animate-item">
+              <div class="blog-card__image">
+                  <img src="/trana-vista/assets/two-B4jyYWlM.jpg" alt="Bot Development">
+                  <span class="blog-card__category">Разработка</span>
+              </div>
+              <div class="blog-card__content">
+                  <div class="blog-card__meta">10 Января, 2026 • 8 мин чтения</div>
+                  <h3 class="blog-card__title">От простого чат-бота до нейронной сети: путь развития</h3>
+                  <p class="blog-card__excerpt">Пошаговый путь, понятный каждому: как внедрить передовую цифровую инфраструктуру в свой проект.</p>
+                  <a href="#contact" class="blog-card__link">
+                      Читать статью
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                  </a>
+              </div>
+          </article>
+
+          <article class="blog-card animate-item">
+              <div class="blog-card__image">
+                  <img src="/trana-vista/assets/three-Bem4RE5c.jpg" alt="Automation">
+                  <span class="blog-card__category">Автоматизация</span>
+              </div>
+              <div class="blog-card__content">
+                  <div class="blog-card__meta">05 Января, 2026 • 6 мин чтения</div>
+                  <h3 class="blog-card__title">Технология для пассивного дохода в 2026 году</h3>
+                  <p class="blog-card__excerpt">Оцените перспективы проекта и узнайте, как автоматизация может работать на вас 24/7 без вашего участия.</p>
+                  <a href="#contact" class="blog-card__link">
+                      Читать статью
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                  </a>
+              </div>
+          </article>
+      </div>
+
+      <div class="blog__footer animate-item">
+          <a href="#" class="btn btn--outline">Смотреть все публикации</a>
+      </div>
+  </div>
+</section>
+<section class="tech" id="tech">
+  <div class="container">
+      <div class="tech__wrapper">
+          <div class="tech__content animate-item">
+              <span class="section-tag">Наш стек</span>
+              <h2 class="section-title">Передовая цифровая инфраструктура</h2>
+              <p class="section-desc">
+                  Мы используем технологии нового поколения, чтобы создавать решения, которые меняют правила игры. Наша платформа уже доступна в Европе и соответствует строгим стандартам безопасности и производительности.
+              </p>
+
+              <ul class="tech__features">
+                  <li class="tech__feature-item">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Легко разобраться без опыта</span>
+                  </li>
+                  <li class="tech__feature-item">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Быстрый и лёгкий старт</span>
+                  </li>
+                  <li class="tech__feature-item">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Подключение занимает 2 минуты</span>
+                  </li>
+              </ul>
+
+              <a href="#contact" class="btn btn--primary">Получить больше информации</a>
+          </div>
+
+          <div class="tech__grid">
+              <div class="tech-card animate-item">
+                  <div class="tech-card__icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                      </svg>
+                  </div>
+                  <h3 class="tech-card__title">Neural Engines</h3>
+                  <p class="tech-card__text">Инновационная технология обработки естественного языка для глубокого понимания контекста.</p>
+              </div>
+
+              <div class="tech-card animate-item">
+                  <div class="tech-card__icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                          <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                      </svg>
+                  </div>
+                  <h3 class="tech-card__title">Smart Automation</h3>
+                  <p class="tech-card__text">Автоматизация без границ: от простых триггеров до сложных бизнес-цепочек.</p>
+              </div>
+
+              <div class="tech-card animate-item">
+                  <div class="tech-card__icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                      </svg>
+                  </div>
+                  <h3 class="tech-card__title">Data Safety</h3>
+                  <p class="tech-card__text">Безопасность уровня ЕС. Ваши данные защищены сквозным шифрованием (E2EE).</p>
+              </div>
+
+              <div class="tech-card animate-item">
+                  <div class="tech-card__icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                          <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                      </svg>
+                  </div>
+                  <h3 class="tech-card__title">Universal API</h3>
+                  <p class="tech-card__text">Бесшовная интеграция с любой экосистемой за считанные минуты.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="benefits" id="benefits">
+  <div class="container">
+      <div class="section-header animate-item">
+          <span class="section-tag">Ваша выгода</span>
+          <h2 class="section-title">Цифровое превосходство в цифрах</h2>
+          <p class="section-desc">Оцените перспективы проекта через призму реальной эффективности. Мы создаем решения, которые работают на ваш пассивный доход.</p>
+      </div>
+
+      <div class="benefits__grid">
+          <div class="benefit-item animate-item">
+              <div class="benefit-item__value" data-target="95">0<span>%</span></div>
+              <h3 class="benefit-item__title">Автоматизация рутины</h3>
+              <p class="benefit-item__text">Освободите время для стратегии, переложив 95% операционных задач на AI-инструменты.</p>
+          </div>
+
+          <div class="benefit-item animate-item">
+              <div class="benefit-item__value" data-target="24">0<span>/7</span></div>
+              <h3 class="benefit-item__title">Бесперебойная работа</h3>
+              <p class="benefit-item__text">Ваш AI-ассистент не спит и не ошибается. Поддержка по всем вопросам доступна клиентам 24/7.</p>
+          </div>
+
+          <div class="benefit-item animate-item">
+              <div class="benefit-item__value" data-target="120">0<span>+</span></div>
+              <h3 class="benefit-item__title">Интеграций в ЕС</h3>
+              <p class="benefit-item__text">Проверенный партнер для бизнеса в Германии. Платформа года по версии профильных изданий.</p>
+          </div>
+
+          <div class="benefit-item animate-item">
+              <div class="benefit-item__value" data-target="2">0<span>мин</span></div>
+              <h3 class="benefit-item__title">Быстрый запуск</h3>
+              <p class="benefit-item__text">Пошаговый путь, понятный каждому. От регистрации до первого работающего бота — всего 2 минуты.</p>
+          </div>
+      </div>
+
+      <div class="benefits__cta animate-item">
+          <div class="cta-box">
+              <div class="cta-box__text">
+                  <h4>Готовы построить карьеру, которая работает на вас?</h4>
+                  <p>Расширьте горизонты проекта с помощью экспертной поддержки на всех этапах.</p>
+              </div>
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="process" id="process">
+  <div class="container">
+      <div class="section-header animate-item">
+          <span class="section-tag">Как мы работаем</span>
+          <h2 class="section-title">Ваш путь к цифровой трансформации</h2>
+          <p class="section-desc">Быстрый и лёгкий старт: от идеи до внедрения интеллектуальной системы всего за несколько шагов.</p>
+      </div>
+
+      <div class="process__timeline">
+          <div class="process-step animate-item">
+              <div class="process-step__number">01</div>
+              <div class="process-step__content">
+                  <h3 class="process-step__title">Анализ и стратегия</h3>
+                  <p class="process-step__text">Оцениваем перспективы проекта и подбираем методологии, доказавшие свою эффективность в вашей нише.</p>
+              </div>
+          </div>
+
+          <div class="process-step animate-item">
+              <div class="process-step__number">02</div>
+              <div class="process-step__content">
+                  <h3 class="process-step__title">Быстрое подключение</h3>
+                  <p class="process-step__text">Интеграция базовых AI-инструментов занимает всего 2 минуты. Мы настраиваем инфраструктуру под ваши задачи.</p>
+              </div>
+          </div>
+
+          <div class="process-step animate-item">
+              <div class="process-step__number">03</div>
+              <div class="process-step__content">
+                  <h3 class="process-step__title">Обучение нейросети</h3>
+                  <p class="process-step__text">Адаптация AI-ассистента под специфику вашего бизнеса. Технология, которая учится на ваших данных.</p>
+              </div>
+          </div>
+
+          <div class="process-step animate-item">
+              <div class="process-step__number">04</div>
+              <div class="process-step__content">
+                  <h3 class="process-step__title">Масштабирование</h3>
+                  <p class="process-step__text">Запуск программы пассивного дохода и постоянная экспертная поддержка на всех этапах развития.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container">
+      <div class="contact__grid">
+          <div class="contact__info animate-item">
+              <span class="section-tag">Свяжитесь с нами</span>
+              <h2 class="section-title">Готовы обсудить ваш проект?</h2>
+              <p class="section-desc">
+                  Оставьте заявку на бесплатную консультацию. Наши эксперты свяжутся с вами в течение 15 минут, чтобы оценить перспективы вашего проекта.
+              </p>
+
+              <div class="contact__badges">
+                  <div class="badge">
+                      <span class="badge__icon">✓</span>
+                      <span class="badge__text">Предложение активно в странах ЕС</span>
+                  </div>
+                  <div class="badge">
+                      <span class="badge__icon">✓</span>
+                      <span class="badge__text">Поддержка по всем вопросам</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contact__form-wrapper animate-item">
+              <form id="contact-form" class="form">
+                  <div class="form__group">
+                      <label for="name" class="form__label">Ваше имя</label>
+                      <input type="text" id="name" name="name" class="form__input" placeholder="Иван Иванов" required>
+                  </div>
+
+                  <div class="form__group">
+                      <label for="email" class="form__label">Электронная почта</label>
+                      <input type="email" id="email" name="email" class="form__input" placeholder="example@mail.com" required>
+                  </div>
+
+                  <div class="form__group">
+                      <label for="phone" class="form__label">Телефон (только цифры)</label>
+                      <input type="tel" id="phone" name="phone" class="form__input" placeholder="49301234567" required>
+                  </div>
+
+                  <div class="form__group">
+                      <label for="captcha" class="form__label" id="captcha-label">Решите пример: <span id="math-problem">5 + 3 = ?</span></label>
+                      <input type="text" id="captcha" class="form__input" placeholder="Ответ" required>
+                  </div>
+
+                  <div class="form__group form__group--checkbox">
+                      <input type="checkbox" id="consent" name="consent" class="form__checkbox" required>
+                      <label for="consent" class="form__checkbox-label">Я согласен с <a href="./personal-data-policy.html" target="_blank">политикой обработки данных</a></label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                      <span class="btn-text">Начать сейчас</span>
+                      <div class="loader" id="loader"></div>
+                  </button>
+
+                  <div id="form-message" class="form__message"></div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__brand">
+              <a href="/" class="logo logo--footer">Trana-Vista</a>
+              <p class="footer__tagline">Технологии нового поколения для вашего бизнеса. Платформа уже доступна в Европе.</p>
+              <div class="footer__contacts">
+                  <a href="tel:+493055539201" class="footer__contact-link">
+                      <i data-lucide="phone"></i> +49 30 555 392 01
+                  </a>
+                  <a href="mailto:hello@trana-vista.fit" class="footer__contact-link">
+                      <i data-lucide="mail"></i> hello@trana-vista.fit
+                  </a>
+                  <span class="footer__contact-link">
+                      <i data-lucide="map-pin"></i> Friedrichstraße 176-179, 10117 Berlin, Germany
+                  </span>
+              </div>
+          </div>
+
+          <div class="footer__nav">
+              <h4 class="footer__title">Меню</h4>
+              <ul class="footer__list">
+                  <li><a href="#" class="footer__link">Главная</a></li>
+                  <li><a href="#blog" class="footer__link">AI-Блог</a></li>
+                  <li><a href="#tech" class="footer__link">Технологии</a></li>
+                  <li><a href="#benefits" class="footer__link">Преимущества</a></li>
+                  <li><a href="#contact" class="footer__link">Запросить доступ</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__legal">
+              <h4 class="footer__title">Юридическая информация</h4>
+              <ul class="footer__list">
+                  <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                  <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+                  <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+                  <li><a href="return.html" class="footer__link">Return Policy</a></li>
+                  <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Trana-Vista. Все права защищены. Экспертная поддержка на всех этапах.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <div class="cookie-popup__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5Z"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+          </div>
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+          </p>
+          <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+      </div>
+  </div>
   </body>
 </html>
